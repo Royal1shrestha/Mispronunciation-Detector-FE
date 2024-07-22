@@ -1,0 +1,154 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 100vh;
+  background-image: linear-gradient(rgba(9, 0, 77, 0.8), rgba(9, 0, 77, 0.8)),
+    url(/images/beautiful-cacti-plant-with-desert-landscape-night-time.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 10px 5%;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+.logo {
+  width: 90px;
+  height: 70px;
+  cursor: pointer;
+}
+
+nav ul {
+  list-style: none;
+  width: 100%;
+  text-align: right;
+  padding-right: 40px;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 10px 20px;
+}
+
+nav ul li a {
+  color: whitesmoke;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #ea1538;
+  transition: 0.3s;
+}
+
+.login {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  border: 0;
+  outline: 0;
+  border-radius: 15px;
+  background: #f5168d;
+  color: antiquewhite;
+  font-weight: 500;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.login:hover {
+  box-shadow: 0 0 10px rgba(245, 22, 141, 0.7), 0 0 20px rgba(245, 22, 141, 0.5);
+  background: #e0147c;
+}
+
+h1 {
+  color: whitesmoke;
+  text-decoration: none;
+  font-weight: bolder;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 320px;
+  height: 50vh;
+  margin: 40px;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.2);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(10px);
+}
+
+.card .content {
+  padding: 20px;
+  text-align: center;
+  transform: translateY(100px);
+  opacity: 0;
+  transition: 0.5s;
+  top: -30px;
+  right: 30px;
+}
+
+.card:hover .content {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+.card .content h2 {
+  font-size: 1.6em;
+  color: antiquewhite;
+}
+
+.card .content h3 {
+  font-size: 1.4em;
+  color: antiquewhite;
+}
+
+.card .content p {
+  font-size: 1em;
+  color: antiquewhite;
+  text-align: justify;
+}
+
+.card .content .chat {
+  align-self: center;
+  cursor: pointer;
+  justify-content: center;
+}
+
+.chat {
+  padding: 10px 20px;
+  margin-left: 0px;
+  border: none;
+  background-color: #f56816de;
+  color: antiquewhite;
+  font-weight: 500;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.chat:hover {
+  background-color: #e0147c;
+}

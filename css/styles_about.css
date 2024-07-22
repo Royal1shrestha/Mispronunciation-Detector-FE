@@ -1,0 +1,122 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 100vh;
+  background-image: linear-gradient(rgba(9, 0, 77, 0.8), rgba(9, 0, 77, 0.8)),
+    url(/images/beautiful-cacti-plant-with-desert-landscape-night-time.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 10px 5%;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+.logo {
+  width: 90px;
+  height: 70px;
+  cursor: pointer;
+}
+
+nav ul {
+  list-style: none;
+  width: 100%;
+  text-align: right;
+  padding-right: 40px;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 10px 20px;
+}
+
+nav ul li a {
+  color: whitesmoke;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #ea1538;
+  transition: 0.3s;
+}
+
+.login {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  border: 0;
+  outline: 0;
+  border-radius: 15px;
+  background: #f5168d;
+  color: antiquewhite;
+  font-weight: 500;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.login:hover {
+  box-shadow: 0 0 10px rgba(245, 22, 141, 0.7), 0 0 20px rgba(245, 22, 141, 0.5);
+  background: #e0147c;
+}
+
+h1 {
+  color: whitesmoke;
+  text-decoration: none;
+  font-weight: bolder;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.card {
+  width: 750px;
+  height: 70vh;
+  margin: 20px;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.7);
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  align-items: center;
+  backdrop-filter: blur(10px);
+}
+
+.card .content {
+  padding: 20px;
+  text-align: center;
+  top: -10px;
+  right: 30px;
+}
+
+.card .content h2 {
+  font-size: 1.6em;
+  color: antiquewhite;
+}
+
+.card .content p {
+  font-size: 1em;
+  color: antiquewhite;
+  text-align: justify;
+}
+
+.card .content a {
+  color: white;
+}

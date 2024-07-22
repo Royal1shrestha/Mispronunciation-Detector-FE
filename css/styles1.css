@@ -1,0 +1,185 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 100vh;
+  background-image: linear-gradient(rgba(9, 0, 77, 0.65), rgba(9, 0, 77, 0.65)),
+    url(/images/beautiful-cacti-plant-with-desert-landscape-night-time.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 10px 5%;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+.logo {
+  width: 90px;
+  height: 70px;
+  cursor: pointer;
+}
+
+nav ul {
+  list-style: none;
+  width: 100%;
+  text-align: right;
+  padding-right: 40px;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 10px 20px;
+}
+
+nav ul li a {
+  color: whitesmoke;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #ea1538;
+  transition: 0.3s;
+}
+
+.login {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  border: 0;
+  outline: 0;
+  border-radius: 15px;
+  background: #f5168d;
+  color: antiquewhite;
+  font-weight: 500;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.login:hover {
+  box-shadow: 0 0 10px rgba(245, 22, 141, 0.7), 0 0 20px rgba(245, 22, 141, 0.5);
+  background: #e0147c;
+}
+
+h1 {
+  color: whitesmoke;
+  text-decoration: none;
+  font-weight: bolder;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+.speak {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+
+.speak-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-top: 0;
+}
+
+.speak-button img {
+  width: 50px;
+  height: 50px;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.icon-container:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.fas.fa-microphone {
+  font-size: 50px;
+  color: #000000;
+  transition: transform 0.3s ease;
+}
+
+.icon-container:hover .fas.fa-microphone {
+  transform: scale(1.2);
+}
+
+.fas.fa-microphone.active {
+  color: #ffffff;
+  background-color: #f5168d;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.transcript-box {
+  margin-top: 60px;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #000;
+  border-radius: 40px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 100%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 28px;
+  word-wrap: break-word;
+  max-height: 200px;
+  overflow-y: auto;
+  transition: max-height 0.3s ease-out;
+}
+
+.highlight {
+  color: #ff6347;
+  font-weight: bolder;
+}
+
+.suggestion-button {
+  text-align: left;
+  margin-top: 20px; /* Adjust as needed */
+}
+
+.suggestion {
+  padding: 10px 20px;
+  margin-left: 40px;
+  border: none;
+  background-color: #f56816de;
+  color: antiquewhite;
+  font-weight: 500;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.suggestion:hover {
+  background-color: #e0147c;
+}
+
+.icon-container.active {
+  background-color: #9b0202;
+}
+
+.icon-container.active .fas.fa-microphone {
+  color: #ffffff;
+}
